@@ -3,221 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наши игроки | Премьер Агентство</title>
-    <meta name="description" content="Реестр профессиональных футболистов, представляемых Премьер Агентством. Статистика, амплуа, гражданство и рыночная стоимость клиентов.">
+    <title>Игроки | Премьер Агентство</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
-    <header class="main-header">
+    <!-- ШАПКА -->
+    <header>
         <div class="logo">
-            <a href="index.html">
-                <h1>Премьер <span>Агентство</span></h1>
-            </a>
+            <h1>⚽ <span>Премьер</span> Агентство</h1>
         </div>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Главная</a>
-            <a href="about.html" class="nav-link">О нас</a>
-            <a href="services.html" class="nav-link">Услуги</a>
-            <a href="players.html" class="nav-link active">Игроки</a>
-            <a href="news.html" class="nav-link">Новости</a>
-            <a href="gallery.html" class="nav-link">Галерея</a>
-            <a href="partners.html" class="nav-link">Партнеры</a>
-            <a href="reviews.html" class="nav-link">Отзывы</a>
-            <a href="vacancies.html" class="nav-link">Вакансии</a>
-            <a href="faq.html" class="nav-link">FAQ</a>
-            <a href="index.html#contacts" class="nav-link">Контакты</a>
-        </nav>
-    </header>
-
-    <!-- ===== ХЛЕБНЫЕ КРОШКИ И ЗАГОЛОВОК ===== -->
-    <section class="page-header">
-        <div class="breadcrumbs">
-            <a href="index.html">Главная</a> — <span>Игроки</span>
-        </div>
-        <h2 class="section-title">Клиенты агентства</h2>
-        <p class="section-subtitle">Профессиональные футболисты, чьи интересы мы защищаем на внутренней и международной аренах</p>
-    </section>
-
-    <!-- ===== ФИЛЬТРЫ ПО ПОЗИЦИЯМ ===== -->
-    <section class="players-section">
-        <div class="position-filters">
-            <button class="pos-filter-btn active" data-pos="all">Все позиции</button>
-            <button class="pos-filter-btn" data-pos="forward">Нападающие</button>
-            <button class="pos-filter-btn" data-pos="midfielder">Полузащитники</button>
-            <button class="pos-filter-btn" data-pos="defender">Защитники и ВРТ</button>
-        </div>
-
-        <!-- ===== СЕТКА КАРТОЧЕК ИГРОКОВ ===== -->
-        <div class="players-grid">
-            
-            <!-- Игрок 1: Алексей Смирнов (Нападающий) -->
-            <div class="player-card" data-position="forward">
-                <div class="player-photo-container">
-                    <img src="images/players/smirnov.jpg" alt="Алексей Смирнов" class="player-img">
-                    <div class="player-status-badge">РПЛ</div>
-                </div>
-                <div class="player-main-info">
-                    <span class="player-number">#9</span>
-                    <h3 class="player-name">Алексей Смирнов</h3>
-                    <p class="player-position-text">Центральный нападающий</p>
-                </div>
-                <div class="player-stats-list">
-                    <div class="stat-line"><span>Возраст:</span> <strong>24 года</strong></div>
-                    <div class="stat-line"><span>Рост / Вес:</span> <strong>187 см / 81 кг</strong></div>
-                    <div class="stat-line"><span>Рабочая нога:</span> <strong>Правая</strong></div>
-                    <div class="stat-line"><span>Гражданство:</span> <strong>РФ 🇷🇺</strong></div>
-                </div>
-                <div class="player-value-box">
-                    <span class="value-title">Рыночная стоимость</span>
-                    <span class="value-price">€ 2.50M</span>
-                </div>
-                <a href="#" class="btn-player-profile">Скаутский отчет</a>
-            </div>
-
-            <!-- Игрок 2: Дмитрий Волков (Полузащитник) -->
-            <div class="player-card" data-position="midfielder">
-                <div class="player-photo-container">
-                    <img src="images/players/volkov.jpg" alt="Дмитрий Волков" class="player-img">
-                    <div class="player-status-badge">Европа</div>
-                </div>
-                <div class="player-main-info">
-                    <span class="player-number">#10</span>
-                    <h3 class="player-name">Дмитрий Волков</h3>
-                    <p class="player-position-text">Атакующий полузащитник</p>
-                </div>
-                <div class="player-stats-list">
-                    <div class="stat-line"><span>Возраст:</span> <strong>22 года</strong></div>
-                    <div class="stat-line"><span>Рост / Вес:</span> <strong>178 см / 72 кг</strong></div>
-                    <div class="stat-line"><span>Рабочая нога:</span> <strong>Левая</strong></div>
-                    <div class="stat-line"><span>Гражданство:</span> <strong>РФ 🇷🇺</strong></div>
-                </div>
-                <div class="player-value-box">
-                    <span class="value-title">Рыночная стоимость</span>
-                    <span class="value-price">€ 4.00M</span>
-                </div>
-                <a href="#" class="btn-player-profile">Скаутский отчет</a>
-            </div>
-
-            <!-- Игрок 3: Максим Козлов (Защитник) -->
-            <div class="player-card" data-position="defender">
-                <div class="player-photo-container">
-                    <img src="images/players/kozlov.jpg" alt="Максим Козлов" class="player-img">
-                    <div class="player-status-badge">РПЛ</div>
-                </div>
-                <div class="player-main-info">
-                    <span class="player-number">#4</span>
-                    <h3 class="player-name">Максим Козлов</h3>
-                    <p class="player-position-text">Центральный защитник</p>
-                </div>
-                <div class="player-stats-list">
-                    <div class="stat-line"><span>Возраст:</span> <strong>27 лет</strong></div>
-                    <div class="stat-line"><span>Рост / Вес:</span> <strong>192 см / 88 кг</strong></div>
-                    <div class="stat-line"><span>Рабочая нога:</span> <strong>Правая</strong></div>
-                    <div class="stat-line"><span>Гражданство:</span> <strong>РФ 🇷🇺</strong></div>
-                </div>
-                <div class="player-value-box">
-                    <span class="value-title">Рыночная стоимость</span>
-                    <span class="value-price">€ 1.80M</span>
-                </div>
-                <a href="#" class="btn-player-profile">Скаутский отчет</a>
-            </div>
-
-            <!-- Игрок 4: Игорь Чернов (Вратарь) -->
-            <div class="player-card" data-position="defender">
-                <div class="player-photo-container">
-                    <img src="images/players/chernov.jpg" alt="Игорь Чернов" class="player-img">
-                    <div class="player-status-badge">Первая лига</div>
-                </div>
-                <div class="player-main-info">
-                    <span class="player-number">#12</span>
-                    <h3 class="player-name">Игорь Чернов</h3>
-                    <p class="player-position-text">Вратарь</p>
-                </div>
-                <div class="player-stats-list">
-                    <div class="stat-line"><span>Возраст:</span> <strong>20 лет</strong></div>
-                    <div class="stat-line"><span>Рост / Вес:</span> <strong>190 см / 84 кг</strong></div>
-                    <div class="stat-line"><span>Рабочая нога:</span> <strong>Правая</strong></div>
-                    <div class="stat-line"><span>Гражданство:</span> <strong>РФ 🇷🇺</strong></div>
-                </div>
-                <div class="player-value-box">
-                    <span class="value-title">Рыночная стоимость</span>
-                    <span class="value-price">€ 450K</span>
-                </div>
-                <a href="#" class="btn-player-profile">Скаутский отчет</a>
-            </div>
-
-            <!-- Игрок 5: Артем Назаров (Полузащитник) -->
-            <div class="player-card" data-position="midfielder">
-                <div class="player-photo-container">
-                    <img src="images/players/nazarov.jpg" alt="Артем Назаров" class="player-img">
-                    <div class="player-status-badge">РПЛ</div>
-                </div>
-                <div class="player-main-info">
-                    <span class="player-number">#6</span>
-                    <h3 class="player-name">Артем Назаров</h3>
-                    <p class="player-position-text">Опорный полузащитник</p>
-                </div>
-                <div class="player-stats-list">
-                    <div class="stat-line"><span>Возраст:</span> <strong>25 лет</strong></div>
-                    <div class="stat-line"><span>Рост / Вес:</span> <strong>182 см / 77 кг</strong></div>
-                    <div class="stat-line"><span>Рабочая нога:</span> <strong>Правая</strong></div>
-                    <div class="stat-line"><span>Гражданство:</span> <strong>РФ 🇷🇺</strong></div>
-                </div>
-                <div class="player-value-box">
-                    <span class="value-title">Рыночная стоимость</span>
-                    <span class="value-price">€ 2.00M</span>
-                </div>
-                <a href="#" class="btn-player-profile">Скаутский отчет</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ===== ПОДВАЛ ===== -->
-    <footer class="main-footer">
-        <div class="social-icons">
-            <a href="#" class="social-link">📱 Instagram</a>
-            <a href="#" class="social-link">💬 Telegram</a>
-            <a href="#" class="social-link">📘 VK</a>
-            <a href="#" class="social-link">🐦 X</a>
-        </div>
-        <div class="footer-links">
+        <nav>
             <a href="index.html">Главная</a>
             <a href="about.html">О нас</a>
             <a href="services.html">Услуги</a>
             <a href="players.html">Игроки</a>
             <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- КОНТЕНТ СТРАНИЦЫ "ИГРОКИ" -->
+    <section>
+        <div class="center">
+            <h2 class="section-title">Наши игроки</h2>
         </div>
-        <p class="copyright">© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
-        <p class="footer-subtext">Профессиональное футбольное агентство</p>
+        <div class="players-grid">
+            <div class="player-card">
+                <div class="number">9</div>
+                <h4>Алексей Смирнов</h4>
+                <p>Нападающий | 24 года</p>
+            </div>
+            <div class="player-card">
+                <div class="number">7</div>
+                <h4>Дмитрий Волков</h4>
+                <p>Полузащитник | 22 года</p>
+            </div>
+            <div class="player-card">
+                <div class="number">4</div>
+                <h4>Илья Морозов</h4>
+                <p>Защитник | 26 лет</p>
+            </div>
+            <div class="player-card">
+                <div class="number">1</div>
+                <h4>Артем Белов</h4>
+                <p>Вратарь | 21 год</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
     </footer>
-
-    <!-- ===== JS ДЛЯ СОРТИРОВКИ КЛИЕНТОВ ===== -->
-    <script>
-        const tabButtons = document.querySelectorAll('.pos-filter-btn');
-        const playerCards = document.querySelectorAll('.player-card');
-
-        tabButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                tabButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const targetPos = btn.getAttribute('data-pos');
-
-                playerCards.forEach(card => {
-                    if (targetPos === 'all' || card.getAttribute('data-position') === targetPos) {
-                        card.style.display = 'flex';
-                        setTimeout(() => card.style.opacity = '1', 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
