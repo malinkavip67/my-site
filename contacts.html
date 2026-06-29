@@ -4,119 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты | Премьер Агентство</title>
-    <meta name="description" content="Свяжитесь с Премьер Агентством. Официальные контакты скаутской службы, адрес офиса в Москве и форма отправки резюме для футболистов.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
+    <!-- ШАПКА -->
+    <header>
         <div class="logo">
-            <a href="index.html">
-                <h1>Премьер <span>Агентство</span></h1>
-            </a>
+            <h1>⚽ <span>Премьер</span> Агентство</h1>
         </div>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Главная</a>
-            <a href="about.html" class="nav-link">О нас</a>
-            <a href="services.html" class="nav-link">Услуги</a>
-            <a href="players.html" class="nav-link">Игроки</a>
-            <a href="news.html" class="nav-link">Новости</a>
-            <a href="gallery.html" class="nav-link">Галерея</a>
-            <a href="partners.html" class="nav-link">Партнеры</a>
-            <a href="reviews.html" class="nav-link">Отзывы</a>
-            <a href="vacancies.html" class="nav-link">Вакансии</a>
-            <a href="faq.html" class="nav-link">FAQ</a>
-            <a href="contacts.html" class="nav-link active">Контакты</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="players.html">Игроки</a>
+            <a href="contacts.html">Контакты</a>
         </nav>
     </header>
 
-    <section class="page-header">
-        <div class="breadcrumbs">
-            <a href="index.html">Главная</a> — <span>Контакты</span>
+    <!-- КОНТЕНТ СТРАНИЦЫ "КОНТАКТЫ" -->
+    <section>
+        <div class="center">
+            <h2 class="section-title">Контакты</h2>
         </div>
-        <h2 class="section-title">Контакты агентства</h2>
-        <p class="section-subtitle">Мы всегда открыты для профессиональных игроков, перспективных талантов и футбольных клубов</p>
-    </section>
-
-    <section class="contacts-page-content">
-        <div class="contacts-container">
-            <div class="contacts-info">
-                <h3>Официальные каналы связи</h3>
-                <p>Свяжитесь напрямую с профильным отделом агентства для оперативного рассмотрения вашего вопроса:</p>
-                
-                <div class="info-item">
-                    <div class="info-icon-box">📞</div>
-                    <div class="info-text">
-                        <small>Телефон скаутского отдела</small>
-                        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon-box">✉️</div>
-                    <div class="info-text">
-                        <small>Для резюме игроков и видео-презентаций</small>
-                        <a href="mailto:scouting@premier-agency.ru">scouting@premier-agency.ru</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon-box">💼</div>
-                    <div class="info-text">
-                        <small>По вопросам трансферов и сотрудничества с клубами</small>
-                        <a href="mailto:transfer@premier-agency.ru">transfer@premier-agency.ru</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon-box">📍</div>
-                    <div class="info-text">
-                        <small>Главный офис</small>
-                        <address>г. Москва, ул. Футбольная, д. 10, БЦ «Премьер»</address>
-                    </div>
-                </div>
+        <div class="contacts">
+            <div class="contact-item">
+                <h4>📞 Телефон</h4>
+                <p><a href="tel:+78005553535">+7 (800) 555-35-35</a></p>
             </div>
-
-            <div class="contacts-form-wrapper">
-                <h3>Анкета соискателя / Запрос</h3>
-                <form action="#" method="POST" class="main-form">
-                    <div class="form-group">
-                        <label for="user-role">Ваш статус</label>
-                        <select id="user-role" name="role" required>
-                            <option value="player">Я футболист / Родитель футболиста</option>
-                            <option value="club">Я скаут / Представитель футбольного клуба</option>
-                            <option value="agent">Футбольный агент / Посредник</option>
-                            <option value="partner">Маркетинг, спонсорство и реклама</option>
-                        </select>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="user-name">Имя и Фамилия</label>
-                            <input type="text" id="user-name" name="name" placeholder="Константин Константинопольский" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="user-phone">Телефон (WhatsApp / Telegram)</label>
-                            <input type="tel" id="user-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="user-link">Ссылка на Transfermarkt / Wyscout / Видео (YouTube)</label>
-                        <input type="url" id="user-link" name="link" placeholder="https://www.transfermarkt.com/...">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="user-message">Сопроводительный текст</label>
-                        <textarea id="user-message" name="message" rows="5" placeholder="Для игроков: укажите год рождения, гражданство, позицию на поле, текущую команду и краткую футбольную биографию..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-submit">Отправить данные на рассмотрение</button>
-                </form>
+            <div class="contact-item">
+                <h4>✉️ Email</h4>
+                <p><a href="mailto:info@premieragency.ru">info@premieragency.ru</a></p>
+            </div>
+            <div class="contact-item">
+                <h4>📍 Адрес</h4>
+                <p>Москва, ул. Спортивная, 10</p>
+            </div>
+            <div class="contact-item">
+                <h4>📱 Соцсети</h4>
+                <p>
+                    <a href="#">Instagram</a> | <a href="#">Telegram</a> | <a href="#">VK</a>
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="map-section">
-        <div class="map-wrapper">
-            <iframe src="
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
