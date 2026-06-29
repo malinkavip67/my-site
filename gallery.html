@@ -4,95 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея | Премьер Агентство</title>
+    <meta name="description" content="Фотогалерея Премьер Агентства: моменты подписания контрактов, тренировочные сборы, просмотры молодых талантов и атмосфера футбольных матчей.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <!-- ===== ШАПКА ===== -->
+    <header class="main-header">
         <div class="logo">
             <a href="index.html">
-                <h1>⚽ <span>Премьер</span> Агентство</h1>
+                <h1>Премьер <span>Агентство</span></h1>
             </a>
         </div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="services.html">Услуги</a>
-            <a href="players.html">Игроки</a>
-            <a href="news.html">Новости</a>
-            <a href="gallery.html" class="active">Галерея</a>
-            <a href="partners.html">Партнеры</a>
-            <a href="reviews.html">Отзывы</a>
-            <a href="vacancies.html">Вакансии</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contacts.html">Контакты</a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="players.html" class="nav-link">Игроки</a>
+            <a href="news.html" class="nav-link">Новости</a>
+            <a href="gallery.html" class="nav-link active">Галерея</a>
+            <a href="partners.html" class="nav-link">Партнеры</a>
+            <a href="reviews.html" class="nav-link">Отзывы</a>
+            <a href="vacancies.html" class="nav-link">Вакансии</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="index.html#contacts" class="nav-link">Контакты</a>
         </nav>
     </header>
 
-    <section>
-        <div class="center">
-            <h2 class="section-title">Галерея</h2>
-            <p style="color:#ccc; max-width:600px; margin:0 auto 30px;">Моменты из жизни нашего агентства и наших игроков</p>
+    <!-- ===== ХЛЕБНЫЕ КРОШКИ И ЗАГОЛОВОК ===== -->
+    <section class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> — <span>Галерея</span>
+        </div>
+        <h2 class="section-title">Медиагалерея</h2>
+        <p class="section-subtitle">Будни агентства: от тяжелых тренировок на сборах до ярких моментов подписания контрактов в офисах топ-клубов</p>
+    </section>
+
+    <!-- ===== ФИЛЬТРЫ ГАЛЕРЕИ ===== -->
+    <section class="gallery-section">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Все фото</button>
+            <button class="filter-btn" data-filter="contracts">Трансферы и контракты</button>
+            <button class="filter-btn" data-filter="training">Сборы и просмотры</button>
+            <button class="filter-btn" data-filter="matches">Матчи и стадионы</button>
         </div>
 
+        <!-- ===== СЕТКА ИЗОБРАЖЕНИЙ ===== -->
         <div class="gallery-grid">
-            <div class="gallery-item">
-                🏟️
-                <span>Стадион «Лужники»</span>
+            
+            <!-- Фото 1: Контракты -->
+            <div class="gallery-item" data-category="contracts">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/contract-1.jpg" alt="Подписание контракта">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Новое соглашение</h4>
+                            <p>Подписание контракта Алексея Смирнова с клубом РПЛ</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                🤝
-                <span>Подписание контракта</span>
+
+            <!-- Фото 2: Тренировки -->
+            <div class="gallery-item" data-category="training">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/training-1.jpg" alt="Тренировочный процесс">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Просмотровый лагерь</h4>
+                            <p>Тестирование скоростно-силовых показателей молодых игроков</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                🏆
-                <span>Кубок чемпионов</span>
+
+            <!-- Фото 3: Матчи -->
+            <div class="gallery-item" data-category="matches">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/match-1.jpg" alt="Футбольный матч">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Игровой день</h4>
+                            <p>Наш скаутский отдел на матче группового этапа</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                📸
-                <span>Фотосессия игроков</span>
+
+            <!-- Фото 4: Контракты -->
+            <div class="gallery-item" data-category="contracts">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/contract-2.jpg" alt="Переговоры в офисе">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Рабочая встреча</h4>
+                            <p>Переговоры с делегацией из европейского футбольного клуба</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                🎯
-                <span>Тренировочный сбор</span>
+
+            <!-- Фото 5: Тренировки -->
+            <div class="gallery-item" data-category="training">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/training-2.jpg" alt="Индивидуальная тренировка">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Индивидуальный план</h4>
+                            <p>Работа нашего полузащитника с тренером по физподготовке</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                ✈️
-                <span>Переезд в новый клуб</span>
+
+            <!-- Фото 6: Матчи -->
+            <div class="gallery-item" data-category="matches">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/match-2.jpg" alt="Атмосфера стадиона">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h4>Финальный свисток</h4>
+                            <p>Дмитрий Волков празднует победу в дерби</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                🎉
-                <span>Празднование победы</span>
-            </div>
-            <div class="gallery-item">
-                📹
-                <span>Интервью с игроком</span>
-            </div>
-            <div class="gallery-item">
-                👥
-                <span>Команда агентства</span>
-            </div>
-            <div class="gallery-item">
-                ⚽
-                <span>Матч с участием</span>
-            </div>
-            <div class="gallery-item">
-                📝
-                <span>Переговорная комната</span>
-            </div>
-            <div class="gallery-item">
-                🥅
-                <span>Гол на стадионе</span>
-            </div>
+
         </div>
     </section>
 
-    <footer>
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer class="main-footer">
         <div class="social-icons">
-            <a href="#">📱 Instagram</a>
-            <a href="#">💬 Telegram</a>
-            <a href="#">📘 VK</a>
-            <a href="#">🐦 X</a>
+            <a href="#" class="social-link">📱 Instagram</a>
+            <a href="#" class="social-link">💬 Telegram</a>
+            <a href="#" class="social-link">📘 VK</a>
+            <a href="#" class="social-link">🐦 X</a>
         </div>
         <div class="footer-links">
             <a href="index.html">Главная</a>
@@ -101,8 +148,36 @@
             <a href="players.html">Игроки</a>
             <a href="contacts.html">Контакты</a>
         </div>
-        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="copyright">© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="footer-subtext">Профессиональное футбольное агентство</p>
     </footer>
+
+    <!-- ===== СКРИПТ ДЛЯ ФИЛЬТРАЦИИ ФОТО ===== -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Убираем активный класс у всех кнопок и добавляем кликнутой
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        // Небольшая задержка для плавного появления
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
