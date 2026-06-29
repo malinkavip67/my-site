@@ -3,60 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Партнеры | Премьер Агентство</title>
+    <title>Наши партнеры | Премьер Агентство</title>
+    <meta name="description" content="С кем сотрудничает Премьер Агентство: ведущие спортивные бренды, медицинские клиники, футбольные клубы и юридические компании.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <!-- ===== ШАПКА ===== -->
+    <header class="main-header">
         <div class="logo">
             <a href="index.html">
-                <h1>⚽ <span>Премьер</span> Агентство</h1>
+                <h1>Премьер <span>Агентство</span></h1>
             </a>
         </div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="services.html">Услуги</a>
-            <a href="players.html">Игроки</a>
-            <a href="news.html">Новости</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="partners.html" class="active">Партнеры</a>
-            <a href="reviews.html">Отзывы</a>
-            <a href="vacancies.html">Вакансии</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contacts.html">Контакты</a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="players.html" class="nav-link">Игроки</a>
+            <a href="news.html" class="nav-link">Новости</a>
+            <a href="gallery.html" class="nav-link">Галерея</a>
+            <a href="partners.html" class="nav-link active">Партнеры</a>
+            <a href="reviews.html" class="nav-link">Отзывы</a>
+            <a href="vacancies.html" class="nav-link">Вакансии</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="index.html#contacts" class="nav-link">Контакты</a>
         </nav>
     </header>
 
-    <section>
-        <div class="center">
-            <h2 class="section-title">Наши партнеры</h2>
-            <p style="color:#ccc; max-width:600px; margin:0 auto 30px;">Компании и клубы, с которыми мы сотрудничаем</p>
+    <!-- ===== ХЛЕБНЫЕ КРОШКИ И ЗАГОЛОВОК ===== -->
+    <section class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> — <span>Партнеры</span>
         </div>
+        <h2 class="section-title">Наши партнеры</h2>
+        <p class="section-subtitle">Мы сотрудничаем с лидерами индустрии, чтобы обеспечивать нашим клиентам лучшие условия для тренировок, лечения и карьерного роста</p>
+    </section>
 
-        <div class="partners-grid">
-            <div class="partner-item">⚽ Спартак</div>
-            <div class="partner-item">⚽ Динамо</div>
-            <div class="partner-item">⚽ ЦСКА</div>
-            <div class="partner-item">⚽ Зенит</div>
-            <div class="partner-item">⚽ Локомотив</div>
-            <div class="partner-item">⚽ Краснодар</div>
-            <div class="partner-item">⚽ Ростов</div>
-            <div class="partner-item">⚽ Рубин</div>
-            <div class="partner-item">🏥 МедСпорт</div>
-            <div class="partner-item">📺 СпортТВ</div>
-            <div class="partner-item">👟 Adidas</div>
-            <div class="partner-item">🔵 Nike</div>
+    <!-- ===== КАТЕГОРИЯ: ГЕНЕРАЛЬНЫЕ ПАРТНЕРЫ ===== -->
+    <section class="partners-section">
+        <h3 class="partners-type-title">Генеральные партнеры</h3>
+        <div class="featured-partners">
+            
+            <!-- Партнер 1 -->
+            <div class="partner-card-large">
+                <div class="partner-logo-box">
+                    <img src="images/partners/sport-brand.png" alt="Спортивный бренд">
+                </div>
+                <div class="partner-details">
+                    <h4>Apex Sport International</h4>
+                    <span class="partner-badge">Экипировочный партнер</span>
+                    <p>Официальный поставщик спортивной экипировки для наших просмотровых лагерей и тренировочных сборов. Благодаря Apex Sport наши молодые игроки получают доступ к передовым технологическим новинкам бренда, обуви и тренировочному инвентарю на эксклюзивных условиях.</p>
+                </div>
+            </div>
+
+            <!-- Партнер 2 -->
+            <div class="partner-card-large">
+                <div class="partner-logo-box">
+                    <img src="images/partners/clinic.png" alt="Медицинский центр">
+                </div>
+                <div class="partner-details">
+                    <h4>СпортМедика Клиник</h4>
+                    <span class="partner-badge">Медицинский партнер</span>
+                    <p>Ведущий центр спортивной медицины и реабилитации. Обеспечивает проведение углубленного медицинского обследования (УМО) перед трансферами, а также разрабатывает индивидуальные программы восстановления для футболистов агентства после травм любой сложности.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer>
+    <!-- ===== КАТЕГОРИЯ: ОФИЦИАЛЬНЫЕ ПАРТНЕРЫ (СЕТКА С ЛОГО) ===== -->
+    <section class="partners-section bg-darker">
+        <h3 class="partners-type-title">Официальные партнеры и связи</h3>
+        <p class="partners-grid-intro">Компании, спортивные организации и аналитические платформы, помогающие нам развивать таланты и собирать точные данные ежедневно:</p>
+        
+        <div class="partners-grid">
+            
+            <div class="partner-grid-item">
+                <img src="images/partners/scout-system.png" alt="Аналитическая система">
+                <h5>StatsPro Analytics</h5>
+                <p>Цифровой скаутинг и данные</p>
+            </div>
+
+            <div class="partner-grid-item">
+                <img src="images/partners/law-firm.png" alt="Юридическая компания">
+                <h5>Lex Football Juris</h5>
+                <p>Международное спортивное право</p>
+            </div>
+
+            <div class="partner-grid-item">
+                <img src="images/partners/nutrition.png" alt="Спортивное питание">
+                <h5>BioFuel Nutriton</h5>
+                <p>Сертифицированное питание</p>
+            </div>
+
+            <div class="partner-grid-item">
+                <img src="images/partners/travel.png" alt="Туристическое агентство">
+                <h5>SportTravel Tour</h5>
+                <p>Логистика сборов и чартеры</p>
+            </div>
+
+            <div class="partner-grid-item">
+                <img src="images/partners/charity.png" alt="Благотворительный фонд">
+                <h5>«Будущий Чемпион»</h5>
+                <p>Поддержка регионального детского футбола</p>
+            </div>
+
+            <div class="partner-grid-item">
+                <img src="images/partners/media.png" alt="Спортивное медиа">
+                <h5>FootBall Daily</h5>
+                <p>Информационный партнер</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== БЛОК: СТАТЬ ПАРТНЕРОМ ===== -->
+    <section class="partner-cta">
+        <div class="cta-container">
+            <h3>Стать партнером агентства</h3>
+            <p>Мы всегда открыты к сотрудничеству со спортивными брендами, медицинскими учреждениями, брендами питания, медиа и представителями футбольных клубов. Давайте развивать индустрию вместе.</p>
+            <a href="index.html#contacts" class="btn btn-gold">Обсудить партнерство</a>
+        </div>
+    </section>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer class="main-footer">
         <div class="social-icons">
-            <a href="#">📱 Instagram</a>
-            <a href="#">💬 Telegram</a>
-            <a href="#">📘 VK</a>
-            <a href="#">🐦 X</a>
+            <a href="#" class="social-link">📱 Instagram</a>
+            <a href="#" class="social-link">💬 Telegram</a>
+            <a href="#" class="social-link">📘 VK</a>
+            <a href="#" class="social-link">🐦 X</a>
         </div>
         <div class="footer-links">
             <a href="index.html">Главная</a>
@@ -65,7 +142,8 @@
             <a href="players.html">Игроки</a>
             <a href="contacts.html">Контакты</a>
         </div>
-        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="copyright">© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="footer-subtext">Профессиональное футбольное агентство</p>
     </footer>
 
 </body>
