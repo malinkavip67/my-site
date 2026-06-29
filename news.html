@@ -3,78 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости | Премьер Агентство</title>
+    <title>Новости и трансферные инсайды | Премьер Агентство</title>
+    <meta name="description" content="Официальные новости Премьер Агентства. Трансферные соглашения, инсайды футбольного рынка, аналитика и отчеты со скаутских просмотров.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <!-- ===== ШАПКА ===== -->
+    <header class="main-header">
         <div class="logo">
             <a href="index.html">
-                <h1>⚽ <span>Премьер</span> Агентство</h1>
+                <h1>Премьер <span>Агентство</span></h1>
             </a>
         </div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="services.html">Услуги</a>
-            <a href="players.html">Игроки</a>
-            <a href="news.html" class="active">Новости</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="partners.html">Партнеры</a>
-            <a href="reviews.html">Отзывы</a>
-            <a href="vacancies.html">Вакансии</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contacts.html">Контакты</a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="players.html" class="nav-link">Игроки</a>
+            <a href="news.html" class="nav-link active">Новости</a>
+            <a href="gallery.html" class="nav-link">Галерея</a>
+            <a href="partners.html" class="nav-link">Партнеры</a>
+            <a href="reviews.html" class="nav-link">Отзывы</a>
+            <a href="vacancies.html" class="nav-link">Вакансии</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="index.html#contacts" class="nav-link">Контакты</a>
         </nav>
     </header>
 
-    <section>
-        <div class="center">
-            <h2 class="section-title">Новости</h2>
-            <p style="color:#ccc; max-width:600px; margin:0 auto 30px;">Последние события из мира футбола и жизни агентства</p>
+    <!-- ===== ХЛЕБНЫЕ КРОШКИ И ЗАГОЛОВОК ===== -->
+    <section class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> — <span>Новости</span>
         </div>
-
-        <div class="news-grid">
-            <div class="news-card">
-                <div class="date">📅 15 июня 2026</div>
-                <h4>Алексей Смирнов перешел в «Спартак»</h4>
-                <p>Наш клиент Алексей Смирнов подписал 3-летний контракт с московским «Спартаком». Сумма трансфера составила €5 млн.</p>
-            </div>
-            <div class="news-card">
-                <div class="date">📅 10 июня 2026</div>
-                <h4>Карлос Сантос вызван в сборную Бразилии</h4>
-                <p>Защитник Карлос Сантос получил вызов в национальную сборную Бразилии на товарищеские матчи.</p>
-            </div>
-            <div class="news-card">
-                <div class="date">📅 5 июня 2026</div>
-                <h4>Открытие нового офиса в Санкт-Петербурге</h4>
-                <p>Мы рады сообщить об открытии второго офиса «Премьер Агентства» в Санкт-Петербурге.</p>
-            </div>
-            <div class="news-card">
-                <div class="date">📅 28 мая 2026</div>
-                <h4>Сергей Ковалев — лучший бомбардир сезона</h4>
-                <p>Наш нападающий Сергей Ковалев признан лучшим бомбардиром РПЛ сезона 2025/2026 с 18 голами.</p>
-            </div>
-            <div class="news-card">
-                <div class="date">📅 20 мая 2026</div>
-                <h4>Дмитрий Волков продлил контракт с «Динамо»</h4>
-                <p>Полузащитник Дмитрий Волков подписал новое соглашение с «Динамо» до 2029 года.</p>
-            </div>
-            <div class="news-card">
-                <div class="date">📅 15 мая 2026</div>
-                <h4>Летний турнир «Премьер Cup» стартует в июле</h4>
-                <p>Агентство организует летний турнир для молодых футболистов. Заявки принимаются до 1 июля.</p>
-            </div>
-        </div>
+        <h2 class="section-title">Новости и инсайды</h2>
+        <p class="section-subtitle">Официальные релизы сделок, аналитика футбольного рынка и отчеты о развитии карьеры наших клиентов</p>
     </section>
 
-    <footer>
+    <!-- ===== ОСНОВНОЙ БЛОК НОВОСТЕЙ ===== -->
+    <main class="news-page-container">
+        <div class="news-layout">
+            
+            <!-- ЛЕВАЯ ЧАСТЬ: СТАТЬИ -->
+            <div class="news-content-area">
+                
+                <!-- ГЛАВНАЯ КРУПНАЯ НОВОСТЬ -->
+                <article class="featured-news">
+                    <div class="featured-img-wrapper">
+                        <img src="images/news/featured-deal.jpg" alt="Главный трансфер сезона">
+                        <span class="news-badge badge-transfer">Трансферный инсайд</span>
+                    </div>
+                    <div class="featured-info">
+                        <div class="news-meta">
+                            <span class="news-date">📅 28 июня 2026</span>
+                            <span class="news-author">👤 Пресс-служба</span>
+                        </div>
+                        <h3><a href="#">Эксклюзив: Полузащитник Дмитрий Волков переходит в европейский клуб</a></h3>
+                        <p>Премьер Агентство официально подтверждает завершение переговоров по трансферу 22-летнего полузащитника Дмитрия Волкова. Сумма сделки и детали личного 4-летнего контракта согласованы. Игрок отправится на медосмотр уже в начале следующей недели. Читайте эксклюзивные комментарии ведущего агента...</p>
+                        <a href="#" class="read-more-btn">Читать полностью →</a>
+                    </div>
+                </article>
+
+                <hr class="news-divider">
+
+                <!-- СЕТКА СТАНДАРТНЫХ НОВОСТЕЙ -->
+                <div class="news-grid">
+                    
+                    <!-- Новость 1 -->
+                    <article class="news-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/news/camp.jpg" alt="Летний лагерь">
+                            <span class="news-badge badge-scouting">Скаутинг</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="news-date">📅 22 июня 2026</span>
+                            <h3><a href="#">Итоги летнего просмотрового сбора в Сочи</a></h3>
+                            <p>Наши скауты подвели итоги 10-дневного тренировочного лагеря для молодых талантов. Из 150 участников три футболиста получили приглашения...</p>
+                            <a href="#" class="card-more">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <!-- Новость 2 -->
+                    <article class="news-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/news/legal.jpg" alt="Юридический консалтинг">
+                            <span class="news-badge badge-legal">Аналитика</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="news-date">📅 15 июня 2026</span>
+                            <h3><a href="#">Новые правила ФИФА по лимитам на аренду</a></h3>
+                            <p>Юридический департамент Премьер Агентства подготовил подробный разбор изменений в регламенте ФИФА, которые вступают в силу в этом сезоне...</p>
+                            <a href="#" class="card-more">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <!-- Новость 3 -->
+                    <article class="news-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/news/smirnov.jpg" alt="Алексей Смирнов">
+                            <span class="news-badge badge-success">Успех</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="news-date">📅 05 июня 2026</span>
+                            <h3><a href="#">Алексей Смирнов — лучший игрок месяца в РПЛ</a></h3>
+                            <p>Нападающий и клиент нашего агентства Алексей Смирнов получил награду MVP по итогам прошедшего игрового месяца, забив 5 мячей в 4 матчах...</p>
+                            <a href="#" class="card-more">Подробнее</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- ПАГИНАЦИЯ (СТРАНИЦЫ) -->
+                <div class="pagination">
+                    <a href="#" class="page-num active">1</a>
+                    <a href="#" class="page-num">2</a>
+                    <a href="#" class="page-num">3</a>
+                    <a href="#" class="page-next">Вперед →</a>
+                </div>
+
+            </div>
+
+            <!-- ПРАВАЯ ЧАСТЬ: САЙДБАР -->
+            <aside class="news-sidebar">
+                
+                <!-- Блок подписки -->
+                <div class="sidebar-widget widget-subscribe">
+                    <h4>Инсайды в Telegram</h4>
+                    <p>Получайте уведомления о трансферах наших игроков и закрытых просмотрах самыми первыми.</p>
+                    <a href="https://t.me/username" target="_blank" class="btn btn-sidebar-tg">Присоединиться к каналу</a>
+                </div>
+
+                <!-- Блок категорий / тегов -->
+                <div class="sidebar-widget widget-tags">
+                    <h4>Категории</h4>
+                    <div class="tags-cloud">
+                        <a href="#" class="tag-link">#Трансферы</a>
+                        <a href="#" class="tag-link">#Скаутинг</a>
+                        <a href="#" class="tag-link">#Интервью</a>
+                        <a href="#" class="tag-link">#Аналитика</a>
+                        <a href="#" class="tag-link">#МолодыеТаланты</a>
+                        <a href="#" class="tag-link">#РПЛ</a>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer class="main-footer">
         <div class="social-icons">
-            <a href="#">📱 Instagram</a>
-            <a href="#">💬 Telegram</a>
-            <a href="#">📘 VK</a>
-            <a href="#">🐦 X</a>
+            <a href="#" class="social-link">📱 Instagram</a>
+            <a href="#" class="social-link">💬 Telegram</a>
+            <a href="#" class="social-link">📘 VK</a>
+            <a href="#" class="social-link">🐦 X</a>
         </div>
         <div class="footer-links">
             <a href="index.html">Главная</a>
@@ -83,7 +166,8 @@
             <a href="players.html">Игроки</a>
             <a href="contacts.html">Контакты</a>
         </div>
-        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="copyright">© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p class="footer-subtext">Профессиональное футбольное агентство</p>
     </footer>
 
 </body>
