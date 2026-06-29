@@ -6,197 +6,118 @@
     <title>Премьер Агентство | Профессиональное футбольное агентство</title>
     <meta name="description" content="Профессиональное футбольное агентство. Контракты, трансферы, развитие карьеры. Помогаем талантам достигать вершин.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <h1>⚽ <span>Премьер</span> Агентство</h1>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-ball"></span> Premier<span>Agency</span>
             </a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="players.html" class="nav-link">Игроки</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
         </div>
-        <nav>
-            <a href="index.html" class="active">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="services.html">Услуги</a>
-            <a href="players.html">Игроки</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
     </header>
 
-    <!-- ===== ГЛАВНЫЙ ЭКРАН (HERO) ===== -->
-    <section class="hero">
-        <div class="container">
-            <h2>Премьер Агентство</h2>
-            <p>Профессиональное футбольное агентство. Помогаем талантам достигать вершин. Контракты, трансферы, развитие карьеры.</p>
-            <div class="hero-buttons">
-                <a href="contacts.html" class="btn">Связаться с нами</a>
-                <a href="about.html" class="btn btn-outline">Узнать больше</a>
+    <main>
+        <section class="hero-section">
+            <div class="container hero-container">
+                <span class="hero-tag">Твой шаг в профессиональный футбол</span>
+                <h1>Развиваем таланты. <br>Строим карьеру.</h1>
+                <p>Профессиональное футбольное агентство полного цикла. Полное юридическое сопровождение, организация трансферов и индивидуальный скаутинг в топ-лигах.</p>
+                <div class="hero-buttons">
+                    <a href="contacts.html" class="btn btn-primary">Оставить заявку</a>
+                    <a href="about.html" class="btn btn-outline">Узнать больше</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== УСЛУГИ ===== -->
-    <section id="services" class="section">
-        <div class="container">
-            <div class="center">
-                <h2 class="section-title">Наши услуги</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon">📋</div>
-                    <h3>Контракты</h3>
-                    <p>Юридическое сопровождение, переговоры с клубами, подписание выгодных контрактов.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🔄</div>
-                    <h3>Трансферы</h3>
-                    <p>Организация переходов в клубы РПЛ, Европы и мира.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">📈</div>
-                    <h3>Карьера</h3>
-                    <p>Индивидуальный план развития, помощь с переездом и адаптацией.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🎯</div>
-                    <h3>Просмотры</h3>
-                    <p>Организация просмотров и тренировочных сборов для талантов.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ИГРОКИ ===== -->
-    <section id="players" class="section">
-        <div class="container">
-            <div class="center">
-                <h2 class="section-title">Наши игроки</h2>
-            </div>
-            <div class="players-grid">
-                <div class="player-card">
-                    <div class="number">9</div>
-                    <div class="flag">🇷🇺</div>
-                    <h4>Алексей Смирнов</h4>
-                    <p>Нападающий | 24 года</p>
-                </div>
-                <div class="player-card">
-                    <div class="number">7</div>
-                    <div class="flag">🇷🇺</div>
-                    <h4>Дмитрий Волков</h4>
-                    <p>Полузащитник | 22 года</p>
-                </div>
-                <div class="player-card">
-                    <div class="number">4</div>
-                    <div class="flag">🇧🇷</div>
-                    <h4>Карлос Сантос</h4>
-                    <p>Защитник | 25 лет</p>
-                </div>
-                <div class="player-card">
-                    <div class="number">1</div>
-                    <div class="flag">🇷🇺</div>
-                    <h4>Артем Белов</h4>
-                    <p>Вратарь | 21 год</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ПОЧЕМУ МЫ ===== -->
-    <section class="section">
-        <div class="container">
-            <div class="center">
-                <h2 class="section-title">Почему выбирают нас</h2>
-            </div>
-            <div class="stats-grid">
+        <section class="stats-section">
+            <div class="container stats-grid">
                 <div class="stat-item">
-                    <div class="stat-icon">🏆</div>
                     <div class="stat-number">50+</div>
                     <p class="stat-label">Успешных трансферов</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">🌍</div>
                     <div class="stat-number">15</div>
                     <p class="stat-label">Стран-партнеров</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">⭐</div>
                     <div class="stat-number">100%</div>
-                    <p class="stat-label">Довольных клиентов</p>
+                    <p class="stat-label">Конфиденциальность</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-icon">📅</div>
                     <div class="stat-number">8 лет</div>
                     <p class="stat-label">Опыта на рынке</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== КОНТАКТЫ ===== -->
-    <section id="contacts" class="section">
-        <div class="container">
-            <div class="center">
-                <h2 class="section-title">Связаться с агентством</h2>
-                <p class="subtitle">Оставьте заявку, и наши скауты свяжутся с вами в течение 24 часов</p>
-            </div>
-
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" name="name" required placeholder="Введите имя">
+        <section class="preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Наши направления</h2>
+                    <a href="services.html" class="link-more">Все услуги →</a>
                 </div>
-                <div class="form-group">
-                    <label for="email">Ваш email</label>
-                    <input type="email" id="email" name="email" required placeholder="Введите email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" name="message" required rows="4" placeholder="Введите сообщение..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-full">Отправить сообщение</button>
-            </form>
-
-            <div class="contacts-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <h4>Телефон</h4>
-                    <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <h4>Email</h4>
-                    <p><a href="mailto:scouting@premier-agency.ru">scouting@premier-agency.ru</a></p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h4>Адрес</h4>
-                    <p>г. Москва, ул. Футбольная, д. 10</p>
+                <div class="grid grid-4">
+                    <div class="card-item">
+                        <div class="card-icon">⚡</div>
+                        <h3>Трансферы</h3>
+                        <p>Организация переходов в клубы РПЛ, Европы и Азии.</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-icon">⚖️</div>
+                        <h3>Контракты</h3>
+                        <p>Юридическая защита и ведение переговоров на высшем уровне.</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-icon">🎯</div>
+                        <h3>Просмотры</h3>
+                        <p>Прямой выход на ведущие академии и основные составы клубов.</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-icon">📈</div>
+                        <h3>Маркетинг</h3>
+                        <p>Создание личного бренда футболиста и работа со спонсорами.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ===== ПОДВАЛ ===== -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-icons">
-                    <a href="#">Instagram</a>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Premier<span>Agency</span></a>
+                <p>Помогаем стать лидерами мирового футбола.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="services.html">Услуги</a>
+                <a href="players.html">Игроки</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-socials">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
                     <a href="#">Telegram</a>
                     <a href="#">VK</a>
-                    <a href="#">X</a>
+                    <a href="#">YouTube</a>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Главная</a>
-                    <a href="about.html">О нас</a>
-                    <a href="services.html">Услуги</a>
-                    <a href="players.html">Игроки</a>
-                    <a href="contacts.html">Контакты</a>
-                </div>
-                <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Премьер Агентство. Все права защищены.</p>
         </div>
     </footer>
 
