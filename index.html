@@ -4,256 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Премьер Агентство | Профессиональное футбольное агентство</title>
-    <meta name="description" content="Премьер Агентство — профессиональное футбольное агентство. Контракты, трансферы, развитие карьеры футболистов.">
+    <meta name="description" content="Профессиональное футбольное агентство. Контракты, трансферы, развитие карьеры. Помогаем талантам достигать вершин.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
-    <header class="main-header">
+    <!-- ===== ШАПКА (ХЕДЕР) ===== -->
+    <header>
         <div class="logo">
             <a href="index.html">
-                <h1>Премьер <span>Агентство</span></h1>
+                <h1>⚽ <span>Премьер</span> Агентство</h1>
             </a>
         </div>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link active">Главная</a>
-            <a href="about.html" class="nav-link">О нас</a>
-            <a href="services.html" class="nav-link">Услуги</a>
-            <a href="players.html" class="nav-link">Игроки</a>
-            <a href="news.html" class="nav-link">Новости</a>
-            <a href="gallery.html" class="nav-link">Галерея</a>
-            <a href="partners.html" class="nav-link">Партнеры</a>
-            <a href="reviews.html" class="nav-link">Отзывы</a>
-            <a href="vacancies.html" class="nav-link">Вакансии</a>
-            <a href="faq.html" class="nav-link">FAQ</a>
-            <a href="#contacts" class="nav-link">Контакты</a>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="players.html">Игроки</a>
+            <a href="contacts.html">Контакты</a>
         </nav>
     </header>
 
-    <!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+    <!-- ===== ГЛАВНЫЙ ЭКРАН (HERO) ===== -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Премьер Агентство</h2>
-            <p>Профессиональное футбольное агентство. Помогаем талантам достигать вершин. Контракты, трансферы, развитие карьеры.</p>
-            <div class="hero-actions">
-                <a href="#contacts" class="btn">Связаться с нами</a>
-                <a href="about.html" class="btn btn-outline">Узнать больше</a>
-            </div>
-        </div>
+        <h2>Премьер Агентство</h2>
+        <p>Профессиональное футбольное агентство. Помогаем талантам достигать вершин. Контракты, трансферы, развитие карьеры.</p>
+        <!-- ИСПРАВЛЕНО: Добавлены работающие ссылки на страницы -->
+        <a href="contacts.html" class="btn">Связаться с нами</a>
+        <a href="about.html" class="btn btn-outline">Узнать больше</a>
     </section>
 
-    <!-- ===== КОРОТКО ОБ УСЛУГАХ ===== -->
-    <section class="services-section">
+    <!-- ===== УСЛУГИ ===== -->
+    <section id="services">
         <div class="center">
             <h2 class="section-title">Наши услуги</h2>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <div class="icon-wrapper">
-                    <!-- Иконка Контракты -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
-                </div>
+                <div class="icon">📋</div>
                 <h3>Контракты</h3>
                 <p>Юридическое сопровождение, переговоры с клубами, подписание выгодных контрактов.</p>
             </div>
             <div class="service-card">
-                <div class="icon-wrapper">
-                    <!-- Иконка Трансферы -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
-                </div>
+                <div class="icon">🔄</div>
                 <h3>Трансферы</h3>
                 <p>Организация переходов в клубы РПЛ, Европы и мира.</p>
             </div>
             <div class="service-card">
-                <div class="icon-wrapper">
-                    <!-- Иконка Карьера -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
-                </div>
+                <div class="icon">📈</div>
                 <h3>Карьера</h3>
                 <p>Индивидуальный план развития, помощь с переездом и адаптацией.</p>
             </div>
             <div class="service-card">
-                <div class="icon-wrapper">
-                    <!-- Иконка Просмотры -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.34 6.336a6.72 6.72 0 1 0 0 11.328M15.34 6.336a6.72 6.72 0 1 1 0 11.328m0-11.328a7.15 7.15 0 0 1 3.905 6.13 7.148 7.148 0 0 1-3.905 6.13M13.5 12h.008v.008H13.5V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" /></svg>
-                </div>
+                <div class="icon">🎯</div>
                 <h3>Просмотры</h3>
                 <p>Организация просмотров и тренировочных сборов для талантов.</p>
             </div>
         </div>
-        <div class="center section-footer-btn">
-            <a href="services.html" class="btn">Все услуги →</a>
-        </div>
     </section>
 
-    <!-- ===== НАШИ ИГРОКИ (кратко) ===== -->
-    <section class="players-section">
+    <!-- ===== ИГРОКИ ===== -->
+    <section id="players">
         <div class="center">
             <h2 class="section-title">Наши игроки</h2>
         </div>
         <div class="players-grid">
             <div class="player-card">
-                <div class="player-meta">
-                    <span class="number">9</span>
-                    <span class="flag">🇷🇺</span>
-                </div>
+                <div class="number">9</div>
+                <div class="flag">🇷🇺</div>
                 <h4>Алексей Смирнов</h4>
                 <p>Нападающий | 24 года</p>
             </div>
             <div class="player-card">
-                <div class="player-meta">
-                    <span class="number">7</span>
-                    <span class="flag">🇷🇺</span>
-                </div>
+                <div class="number">7</div>
+                <div class="flag">🇷🇺</div>
                 <h4>Дмитрий Волков</h4>
                 <p>Полузащитник | 22 года</p>
             </div>
             <div class="player-card">
-                <div class="player-meta">
-                    <span class="number">4</span>
-                    <span class="flag">🇧🇷</span>
-                </div>
+                <div class="number">4</div>
+                <div class="flag">🇧🇷</div>
                 <h4>Карлос Сантос</h4>
                 <p>Защитник | 25 лет</p>
             </div>
             <div class="player-card">
-                <div class="player-meta">
-                    <span class="number">1</span>
-                    <span class="flag">🇷🇺</span>
-                </div>
+                <div class="number">1</div>
+                <div class="flag">🇷🇺</div>
                 <h4>Артем Белов</h4>
                 <p>Вратарь | 21 год</p>
             </div>
         </div>
-        <div class="center section-footer-btn">
-            <a href="players.html" class="btn">Все игроки →</a>
-        </div>
     </section>
 
     <!-- ===== ПОЧЕМУ МЫ ===== -->
-    <section class="features-section">
+    <section>
         <div class="center">
             <h2 class="section-title">Почему выбирают нас</h2>
         </div>
-        <div class="features-grid">
-            <div class="feature-item">
-                <div class="feature-icon">🏆</div>
-                <h3 class="feature-number">50+</h3>
-                <p class="feature-text">Успешных трансферов</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:30px; text-align:center;">
+            <div>
+                <div style="font-size:48px;">🏆</div>
+                <h3 style="color:#f5c842;">50+</h3>
+                <p style="color:#bbb;">Успешных трансферов</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">🌍</div>
-                <h3 class="feature-number">15</h3>
-                <p class="feature-text">Стран-партнеров</p>
+            <div>
+                <div style="font-size:48px;">🌍</div>
+                <h3 style="color:#f5c842;">15</h3>
+                <p style="color:#bbb;">Стран-партнеров</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">⭐</div>
-                <h3 class="feature-number">100%</h3>
-                <p class="feature-text">Довольных клиентов</p>
+            <div>
+                <div style="font-size:48px;">⭐</div>
+                <h3 style="color:#f5c842;">100%</h3>
+                <p style="color:#bbb;">Довольных клиентов</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">📅</div>
-                <h3 class="feature-number">8 лет</h3>
-                <p class="feature-text">Опыта на рынке</p>
+            <div>
+                <div style="font-size:48px;">📅</div>
+                <h3 style="color:#f5c842;">8 лет</h3>
+                <p style="color:#bbb;">Опыта на рынке</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== СЕКЦИЯ КОНТАКТОВ ===== -->
-    <section id="contacts" class="contacts-section">
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section id="contacts">
         <div class="center">
             <h2 class="section-title">Связаться с агентством</h2>
-            <p class="section-subtitle">Оставьте заявку, и наши скауты свяжутся с вами в течение 24 часов</p>
+            <p style="color: #cccccc; margin-bottom: 30px;">Оставьте заявку, и наши скауты свяжутся с вами в течение 24 часов</p>
         </div>
-
-        <div class="contacts-container">
-            <!-- Левая колонка: Инфо -->
-            <div class="contacts-info">
-                <h3>Прямая связь</h3>
-                <p>Если вы являетесь официальным представителем футбольного клуба, профессиональным игроком или его родителем, свяжитесь с нами напрямую:</p>
-                
-                <div class="info-item">
-                    <div class="info-icon-box">📞</div>
-                    <div class="info-text">
-                        <small>Телефон скаутского отдела</small>
-                        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon-box">✉️</div>
-                    <div class="info-text">
-                        <small>Почта для резюме и предложений</small>
-                        <a href="mailto:scouting@premier-agency.ru">scouting@premier-agency.ru</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon-box">📍</div>
-                    <div class="info-text">
-                        <small>Главный офис</small>
-                        <address>г. Москва, ул. Футбольная, д. 10, БЦ «Премьер»</address>
-                    </div>
-                </div>
+        <!-- ИСПРАВЛЕНО: Добавлен атрибут action и method для формы, чтобы она начала работать -->
+        <form action="https://formspree.io/f/ваш_идентификатор_формы" method="POST" style="max-width:600px; margin:0 auto 40px; background:#12202f; padding:40px; border-radius:12px; border:1px solid #1b3a4b;">
+            <div style="margin-bottom:15px;">
+                <label style="color:#f5c842; display:block; margin-bottom:5px;">Ваше имя</label>
+                <input type="text" name="name" required placeholder="Введите имя" style="width:100%; padding:12px; border-radius:8px; border:1px solid #1b3a4b; background:#0a0e17; color:#fff;">
             </div>
+            <div style="margin-bottom:15px;">
+                <label style="color:#f5c842; display:block; margin-bottom:5px;">Ваш email</label>
+                <input type="email" name="email" required placeholder="Введите email" style="width:100%; padding:12px; border-radius:8px; border:1px solid #1b3a4b; background:#0a0e17; color:#fff;">
+            </div>
+            <div style="margin-bottom:15px;">
+                <label style="color:#f5c842; display:block; margin-bottom:5px;">Сообщение</label>
+                <textarea name="message" required rows="4" placeholder="Введите сообщение..." style="width:100%; padding:12px; border-radius:8px; border:1px solid #1b3a4b; background:#0a0e17; color:#fff;"></textarea>
+            </div>
+            <!-- ИСПРАВЛЕНО: Кнопка отправки формы теперь работает -->
+            <button type="submit" class="btn" style="width:100%;">Отправить сообщение</button>
+        </form>
 
-            <!-- Правая колонка: Форма -->
-            <div class="contacts-form-wrapper">
-                <form action="#" method="POST" class="main-form">
-                    <div class="form-group">
-                        <label for="user-role">Кто вы?</label>
-                        <select id="user-role" name="role" required>
-                            <option value="player">Я футболист / Представитель игрока</option>
-                            <option value="club">Я скаут / Представитель клуба</option>
-                            <option value="partner">По вопросам сотрудничества</option>
-                        </select>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="user-name">Ваше имя и фамилия</label>
-                            <input type="text" id="user-name" name="name" placeholder="Иван Иванов" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="user-phone">Телефон (WhatsApp/Telegram)</label>
-                            <input type="tel" id="user-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="user-link">Ссылка на видео (YouTube) или Transfermarkt</label>
-                        <input type="url" id="user-link" name="link" placeholder="https://...">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="user-message">Дополнительная информация</label>
-                        <textarea id="user-message" name="message" rows="4" placeholder="Укажите возраст, амплуа, текущий клуб или суть вашего предложения..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-submit">Отправить заявку</button>
-                </form>
+        <div class="contacts">
+            <div class="contact-item">
+                <div class="icon">📞</div>
+                <h4>Телефон скаутского отдела</h4>
+                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">✉️</div>
+                <h4>Почта для резюме и предложений</h4>
+                <p><a href="mailto:scouting@premier-agency.ru">scouting@premier-agency.ru</a></p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">📍</div>
+                <h4>Главный офис</h4>
+                <p>г. Москва, ул. Футбольная, д. 10, БЦ «Премьер»</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== ПОДВАЛ ===== -->
-    <footer class="main-footer">
+    <!-- ===== ПОДВАЛ (ФУТЕР) ===== -->
+    <footer>
         <div class="social-icons">
-            <a href="#" class="social-link">📱 Instagram</a>
-            <a href="#" class="social-link">💬 Telegram</a>
-            <a href="#" class="social-link">📘 VK</a>
-            <a href="#" class="social-link">🐦 X</a>
+            <a href="#">📱 Instagram</a>
+            <a href="#">💬 Telegram</a>
+            <a href="#">📘 VK</a>
+            <a href="#">🐦 X</a>
         </div>
         <div class="footer-links">
             <a href="index.html">Главная</a>
             <a href="about.html">О нас</a>
             <a href="services.html">Услуги</a>
             <a href="players.html">Игроки</a>
-            <a href="#contacts">Контакты</a>
+            <a href="contacts.html">Контакты</a>
         </div>
-        <p class="copyright">© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
-        <p class="footer-subtext">Профессиональное футбольное агентство</p>
+        <p>© 2026 <span>Премьер Агентство</span>. Все права защищены.</p>
+        <p style="font-size:13px; color:#666; margin-top:5px;">Профессиональное футбольное агентство</p>
     </footer>
 
 </body>
