@@ -670,3 +670,135 @@ a {
         font-size: 0.85rem;
     }
 }
+/* ==========================================================================
+   9. СТИЛИ СТРАНИЦЫ ВАКАНСИЙ (VACANCIES.HTML)
+   ========================================================================== */
+.vacancies-benefits {
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-3px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h4 {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Список вакансий */
+.vacancies-list-section {
+    padding: 60px 4%;
+}
+
+.vacancies-list-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.jobs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.job-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.job-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.job-meta {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.job-meta span {
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.job-body h5 {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 15px 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.job-body p {
+    color: var(--text-desc);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Секция призыва (HR-CTA) */
+.vacancies-cta {
+    padding: 60px 4%;
+    background: var(--bg-main);
+}
+
+.hr-contact {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin: 20px 0 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Мобильная адаптивность для вакансий */
+@media (max-width: 768px) {
+    .job-card {
+        padding: 20px;
+    }
+    .job-title {
+        font-size: 1.2rem;
+    }
+    .hr-contact {
+        font-size: 1.2rem;
+    }
+}
